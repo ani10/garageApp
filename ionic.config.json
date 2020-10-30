@@ -1,0 +1,7 @@
+{
+  "name": "garage-plug",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
