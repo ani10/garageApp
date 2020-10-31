@@ -24,31 +24,31 @@ export class ServicesPage implements OnInit {
           "selected": false
       },{
           "id": "002",
-          "service": "Car Wash",
+          "service": "Deep Clean",
           "svg": "../../assets/services-icons/car-wash.svg",
           "price": 1200.00,
           "selected": false
       },{
           "id": "003",
-          "service": "Car Wash",
+          "service": "Locked Out",
           "svg": "../../assets/services-icons/car-wash.svg",
           "price": 1200.00,
           "selected": false
       },{
           "id": "004",
-          "service": "Car Wash",
+          "service": "Towing Services",
           "svg": "../../assets/services-icons/car-wash.svg",
           "price": 1200.00,
           "selected": false
       },{
           "id": "005",
-          "service": "Car Wash",
+          "service": "Customization",
           "svg": "../../assets/services-icons/car-wash.svg",
           "price": 1200.00,
           "selected": false
       },{
           "id": "006",
-          "service": "Car Wash",
+          "service": "Paint Job",
           "svg": "../../assets/services-icons/car-wash.svg",
           "price": 1200.00,
           "selected": false
@@ -66,7 +66,7 @@ export class ServicesPage implements OnInit {
           "selected": false
       },{
           "id": "009",
-          "service": "General Servics",
+          "service": "General Servicing",
           "svg": "../../assets/services-icons/car-wash.svg",
           "price": 1200.00,
           "selected": false

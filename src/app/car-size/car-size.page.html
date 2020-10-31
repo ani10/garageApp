@@ -14,7 +14,7 @@
     <ng-container *ngFor="let size of sizes">
       <ion-col sizeSm="6" sizeMd="4" fixed (click)="selectCarSize(size)">
         <div>
-          <ion-card [ngClass]="{'highlight' : size.selected}">
+          <ion-card type='button' [ngClass]="{'highlight' : size.selected}">
             <ion-card-header>
               <ion-card-title>
                 <ion-icon name="car-outline"></ion-icon>

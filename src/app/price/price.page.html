@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button text=""></ion-back-button>
     </ion-buttons>
-    <ion-title>price</ion-title>
+    <ion-title>Price</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -56,10 +56,10 @@
       </ion-row>
     </ion-grid>
   </ion-item-divider>
-  <ion-item-divider color="secondary">
+  <ion-item-divider color="medium">
     <ion-text>
       <h2>
-        Price: {{price}}   
+        Price : {{price | currency: currency}}   
       </h2>
 
     </ion-text>

@@ -13,6 +13,7 @@ export class PricePage implements OnInit {
   selectedServices = Array<Service>();
   selectedSize: Size;
   price: number = 0;
+  currency: string = 'INR';
   subscription: Subscription = new Subscription();
 
   constructor(private internalService: InternalService) { }
@@ -37,5 +38,4 @@ export class PricePage implements OnInit {
   ionViewDidLeave(){
     this.price = 0;
   }
-
 }
