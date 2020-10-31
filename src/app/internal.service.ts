@@ -8,9 +8,9 @@ import { Service, Size } from './app.models';
 export class InternalService {
   selectedServices = new BehaviorSubject<Array<Service>>([]);
   selectedSize = new BehaviorSubject<Size>({
-    "name": '',
-    "price": null,
-    "selected": null
+    name: null,
+    price: null,
+    selected: null
   });
   constructor() { }
   

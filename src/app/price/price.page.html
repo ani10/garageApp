@@ -7,10 +7,11 @@
 <ion-content>
   <ion-grid>
     <ion-row class="ion-justify-content-start">
+      <div>Selected Service</div>
       <ng-container *ngFor="let service of selectedServices">
         <ion-col sizeSm="6" sizeMd="4">
           <div>
-            <ion-card  >
+            <ion-card>
               <ion-card-header>
                 <ion-card-title>
                   <ion-icon name="car-outline"></ion-icon>
@@ -23,6 +24,23 @@
           </div>
         </ion-col>
       </ng-container>
+    </ion-row>
+    <ion-row class="ion-justify-content-start">
+      <div>Car Size</div>
+      <ion-col sizeSm="6" sizeMd="4">
+        <div>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>
+                <ion-icon name="car-outline"></ion-icon>
+              </ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              {{selectedSize.name}}
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>

@@ -12,26 +12,24 @@ export class PricePage implements OnInit {
 
   selectedServices = Array<Service>();
   selectedSize: Size;
-  subscription= new Subscription();
+  subscription: Subscription = new Subscription();
 
   constructor(private internalService: InternalService) { }
 
   ngOnInit() {
-  }
-  ionViewDidEnter(){
     this.subscription.add(
       this.internalService.selectedServices.subscribe(item=>{
-        console.log(item)
+        //console.log(item)
       this.selectedServices = item;
     }));
     this.subscription.add(
       this.internalService.selectedSize.subscribe(item=>{
-        console.log(item)
+        console.log(item);
         this.selectedSize = item;
+        console.log(this.selectedSize)
     }));
-    console.log(this.selectedServices, this.selectedSize)
   }
-  ionViewDidLeave(){
-    this.subscription.unsubscribe();
+  ionViewDidEnter(){
+    
   }
 }

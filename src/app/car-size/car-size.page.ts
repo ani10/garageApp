@@ -63,15 +63,15 @@ export class CarSizePage implements OnInit {
   }
   selectCarSize(item: Size){
     this.selectedSize = item;
-    console.log(this.selectedSize)
-    this.internalService.selectedSize.next(this.selectedSize)
     this.sizes.forEach(element => {
       if(element !== item){
         element.selected = false;
       } else {
         element.selected = true;
-      }
+        this.selectedSize.selected = true;
+      } 
     });
+    this.internalService.selectedSize.next(this.selectedSize)
   }
   continue() {
   }
