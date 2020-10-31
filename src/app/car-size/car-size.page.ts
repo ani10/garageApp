@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-interface Size {
-  name: String;
-  price: Number; 
-}
+import { Size } from '../app.models';
 
 @Component({
   selector: 'app-car-size',

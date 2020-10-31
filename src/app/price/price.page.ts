@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Service, Size } from '../app.models';
 
 @Component({
   selector: 'app-price',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./price.page.scss'],
 })
 export class PricePage implements OnInit {
+
+  selectedServices = Array<Service>();
+  selectedSize: Size;
 
   constructor() { }
 

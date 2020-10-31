@@ -1,11 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-interface Service {
-  id: String;
-  service: String;
-  svg: String;
-  price: Number;
-}
+import { Service } from '../app.models';
 
 @Component({
   selector: 'app-services',
