@@ -13,9 +13,9 @@
   <ion-grid>
     <ion-row class="ion-justify-content-start">
       <ng-container *ngFor="let service of services">
-        <ion-col sizeSm="6" sizeMd="4">
+        <ion-col sizeSm="6" sizeMd="4" (click)="toggleSelectItem(service)">
           <div>
-            <ion-card  >
+            <ion-card [ngClass]="{'highlight' : service.selected}">
               <ion-card-header>
                 <ion-card-title>
                   <ion-icon name="car-outline"></ion-icon>
@@ -31,6 +31,6 @@
     </ion-row>
   </ion-grid>
   <div id="container">
-    <ion-button [routerLink]="['/car-size']" color="light">Continue</ion-button>
+    <ion-button (click)="continue()" [routerLink]="['/car-size']" color="light">Continue</ion-button>
   </div>
 </ion-content>
