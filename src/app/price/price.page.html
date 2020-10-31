@@ -1,15 +1,45 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
     <ion-title>price</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-grid>
-    <ion-row class="ion-justify-content-start">
-      <div>Selected Service</div>
-      <ng-container *ngFor="let service of selectedServices">
-        <ion-col sizeSm="6" sizeMd="4">
+<ion-content class="ion-padding">
+  <ion-item-divider>
+    <ion-grid>
+      <ion-text>
+        <h2>
+          Selected Service
+        </h2>
+      </ion-text>
+      <ion-row class="ion-justify-content-start">
+        <ng-container *ngFor="let service of selectedServices">
+          <ion-col sizeSm="2" sizeMd="4" fixed>
+            <div>
+              <ion-card>
+                <ion-card-header>
+                  <ion-card-title>
+                    <ion-icon name="car-outline"></ion-icon>
+                  </ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                  {{service.service}}
+                </ion-card-content>
+              </ion-card>
+            </div>
+          </ion-col>
+        </ng-container>
+      </ion-row>
+      <ion-text>
+        <h2>
+          Car Size
+        </h2>
+      </ion-text>
+      <ion-row class="ion-justify-content-start">
+        <ion-col sizeSm="2" sizeMd="4" fixed>
           <div>
             <ion-card>
               <ion-card-header>
@@ -18,29 +48,21 @@
                 </ion-card-title>
               </ion-card-header>
               <ion-card-content>
-                {{service.service}}
+                {{selectedSize.name}}
               </ion-card-content>
             </ion-card>
           </div>
         </ion-col>
-      </ng-container>
-    </ion-row>
-    <ion-row class="ion-justify-content-start">
-      <div>Car Size</div>
-      <ion-col sizeSm="6" sizeMd="4">
-        <div>
-          <ion-card>
-            <ion-card-header>
-              <ion-card-title>
-                <ion-icon name="car-outline"></ion-icon>
-              </ion-card-title>
-            </ion-card-header>
-            <ion-card-content>
-              {{selectedSize.name}}
-            </ion-card-content>
-          </ion-card>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+      </ion-row>
+    </ion-grid>
+  </ion-item-divider>
+  <ion-item-divider color="secondary">
+    <ion-text>
+      <h2>
+        Price: {{price}}   
+      </h2>
+
+    </ion-text>
+  </ion-item-divider>
+  
 </ion-content>

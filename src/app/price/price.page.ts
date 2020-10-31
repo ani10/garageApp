@@ -12,6 +12,7 @@ export class PricePage implements OnInit {
 
   selectedServices = Array<Service>();
   selectedSize: Size;
+  price: number = 0;
   subscription: Subscription = new Subscription();
 
   constructor(private internalService: InternalService) { }
@@ -19,17 +20,22 @@ export class PricePage implements OnInit {
   ngOnInit() {
     this.subscription.add(
       this.internalService.selectedServices.subscribe(item=>{
-        //console.log(item)
       this.selectedServices = item;
     }));
     this.subscription.add(
       this.internalService.selectedSize.subscribe(item=>{
-        console.log(item);
         this.selectedSize = item;
-        console.log(this.selectedSize)
     }));
   }
-  ionViewDidEnter(){
-    
+  ionViewWillEnter(){
+    this.selectedServices.map(item=>{
+      let serviceCost: number = item.price;
+      let multiplyingFactor: number = this.selectedSize.price;
+      this.price += serviceCost * multiplyingFactor
+    })
   }
+  ionViewDidLeave(){
+    this.price = 0;
+  }
+
 }

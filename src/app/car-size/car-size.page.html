@@ -12,7 +12,7 @@
 <ion-grid>
   <ion-row class="ion-justify-content-start">
     <ng-container *ngFor="let size of sizes">
-      <ion-col sizeSm="6" sizeMd="4" (click)="selectCarSize(size)">
+      <ion-col sizeSm="6" sizeMd="4" fixed (click)="selectCarSize(size)">
         <div>
           <ion-card [ngClass]="{'highlight' : size.selected}">
             <ion-card-header>

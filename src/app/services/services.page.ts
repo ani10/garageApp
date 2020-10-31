@@ -85,6 +85,5 @@ export class ServicesPage implements OnInit {
     this.internalService.selectedServices.next(this.selectedServices);
   }
   continue(){
-    console.log(this.selectedServices)
   }
 }
