@@ -19,55 +19,55 @@ export class ServicesPage implements OnInit {
       {
           "id": "001",
           "service": "Car Wash",
-          "svg": "../../assets/services-icons/car-wash.svg",
+          "svg": "car-wash.svg",
           "price": 1200.00,
           "selected": false
       },{
           "id": "002",
-          "service": "Deep Clean",
-          "svg": "../../assets/services-icons/car-wash.svg",
-          "price": 1200.00,
+          "service": "Airbag",
+          "svg": "airbag.svg",
+          "price": 1600.00,
           "selected": false
       },{
           "id": "003",
-          "service": "Locked Out",
-          "svg": "../../assets/services-icons/car-wash.svg",
+          "service": "Glass Cleaning",
+          "svg": "glass-cleaning.svg",
           "price": 1200.00,
           "selected": false
       },{
           "id": "004",
-          "service": "Towing Services",
-          "svg": "../../assets/services-icons/car-wash.svg",
+          "service": "Rain Repellent Mod",
+          "svg": "rain-repellent.svg",
           "price": 1200.00,
           "selected": false
       },{
           "id": "005",
           "service": "Customization",
-          "svg": "../../assets/services-icons/car-wash.svg",
+          "svg": "customization.svg",
           "price": 1200.00,
           "selected": false
       },{
           "id": "006",
           "service": "Paint Job",
-          "svg": "../../assets/services-icons/car-wash.svg",
+          "svg": "paint-job.svg",
           "price": 1200.00,
           "selected": false
       },{
           "id": "007",
           "service": "Puncture",
-          "svg": "../../assets/services-icons/car-wash.svg",
-          "price": 1200.00,
+          "svg": "puncture.svg",
+          "price": 700.00,
           "selected": false
       },{
           "id": "008",
-          "service": "Engine Repair",
-          "svg": "../../assets/services-icons/car-wash.svg",
+          "service": "Headlight issues",
+          "svg": "headlight.svg",
           "price": 1200.00,
           "selected": false
       },{
           "id": "009",
           "service": "General Servicing",
-          "svg": "../../assets/services-icons/car-wash.svg",
+          "svg": "general-servicing.svg",
           "price": 1200.00,
           "selected": false
       }
