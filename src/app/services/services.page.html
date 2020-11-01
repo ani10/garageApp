@@ -15,10 +15,10 @@
       <ng-container *ngFor="let service of services">
         <ion-col sizeSm="6" sizeMd="4" fixed (click)="toggleSelectItem(service)">
           <div>
-            <ion-card type='button' [ngClass]="{'highlight' : service.selected}">
+            <ion-card class="service-card" type='button' [ngClass]="{'highlight' : service.selected}">
               <ion-card-header>
                 <ion-card-title>
-                  <img class="service-icon" src="../../assets/services-icons/{{service.svg}}"/>
+                  <img src="../../assets/services-icons/{{service.svg}}"/>
                 </ion-card-title>
               </ion-card-header>
               <ion-card-content>

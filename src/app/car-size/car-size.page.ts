@@ -18,47 +18,56 @@ export class CarSizePage implements OnInit {
     this.sizes = [{
       "name": "small",
       "price": 1,
-      "selected": false
+      "selected": false,
+      "svg": "small.svg"
     },
     {
       "name": "sedan",
       "price": 1.5,
-      "selected": false
+      "selected": false,
+      "svg": "sedan.svg"
     },
     {
       "name": "minivan",
       "price": 1.75,
-      "selected": false
+      "selected": false,
+      "svg": "minivan.svg"
     },
     {
       "name": "hatchback",
       "price": 2,
-      "selected": false
+      "selected": false,
+      "svg": "hatchback.svg"
     },
     {
       "name": "CUV",
       "price": 2.5,
-      "selected": false
+      "selected": false,
+      "svg": "cuv.svg"
     },
     {
       "name": "Van",
       "price": 2.75,
-      "selected": false
+      "selected": false,
+      "svg": "van.svg"
     },
     {
       "name": "Supercar",
       "price": 3,
-      "selected": false
+      "selected": false,
+      "svg": "supercar.svg"
     },
     {
       "name": "Pickup Truck",
       "price": 3.5,
-      "selected": false
+      "selected": false,
+      "svg": "pickup.svg"
     },
     {
       "name": "SUV",
       "price": 4,
-      "selected": false
+      "selected": false,
+      "svg": "pickup.svg"
     }]
   }
   selectCarSize(item: Size){

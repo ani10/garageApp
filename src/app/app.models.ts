@@ -2,7 +2,8 @@
 export interface Size {
     name: string;
     price: number; 
-    selected: boolean
+    selected: boolean;
+    svg?: string;
 }
 
 export interface Service {
