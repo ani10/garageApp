@@ -67,7 +67,7 @@ export class CarSizePage implements OnInit {
       "name": "SUV",
       "price": 4,
       "selected": false,
-      "svg": "pickup.svg"
+      "svg": "suv.svg"
     }]
   }
   selectCarSize(item: Size){
